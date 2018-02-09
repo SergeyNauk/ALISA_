@@ -1,0 +1,98 @@
+@import 'reset.scss';
+@import 'keyFrames.scss';
+
+html, body {
+  background: linear-gradient( to top, yellow, pink);
+  height: 99.7%;
+}
+header {
+  margin-top: 0.3%;
+  width: 80%;
+  background-color: #FFA07A;
+  border-radius: 10px;
+  margin-left: 10%;
+  h6, h1 {
+    padding: 5px;
+    text-align: center;
+    font-size: 1rem;
+    color:#C71585;
+  }
+}
+main {
+  height: 75%;
+}
+.containerForMessage {
+  height: 100%;
+  width:100%;
+  overflow: auto;
+}
+.fieldEnterNickName {
+  span {
+    margin-left: 10px;
+    color: white;
+  }
+  input {
+    margin-top: 10px;
+    border-radius: 10px;
+    outline: 0;
+    padding: 5px;
+  }
+  button {
+    background-color: deeppink;
+    color:white;
+    border-radius: 10px;
+    outline: 0;
+  }
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 1%;
+  background-color: palevioletred;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.messageField {
+  display: none;
+  width: 100%;
+  .sendMessage {
+    position:fixed;
+    left:90%;
+    top:88%;
+    width: 6%;
+    height: 60px;
+    border-radius: 10px;
+    outline: 0;
+    background-color: coral;
+    color: white;
+  }
+  .inputMessage {
+    position: fixed;
+    width: 80%;
+    height: 50px;
+    background-color: white;
+    margin-left: 8%;
+    top:88%;
+    padding: 5px;
+    overflow: hidden;
+    outline: 0;
+    border-radius:20px;
+  }
+}
+.statusMessage {
+  width: 16%;
+  height:22px;
+  position:fixed;
+  left:8.5%;
+  top:83.5%;
+  background-color:white;
+  border-radius:10px;
+  padding:2px;
+  display:none;
+}
+.animationMessageUser {
+  animation: departureUserMessage 0.7s;
+}
+
+.animationMessageBot {
+  animation: departureBotMessage 0.7s;
+}

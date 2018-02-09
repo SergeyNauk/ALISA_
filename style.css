@@ -1,0 +1,147 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@keyframes departureUserMessage {
+  from {
+    position: absolute;
+    right: 100%;
+    opacity: 0;
+    transform: scale(0.1); }
+  to {
+    position: absolute;
+    right: 10%;
+    opacity: 0.5;
+    transform: scale(1); } }
+@keyframes departureBotMessage {
+  from {
+    position: absolute;
+    right: 100%;
+    opacity: 0;
+    transform: scale(0.1); }
+  to {
+    position: absolute;
+    right: 40%;
+    opacity: 0.5;
+    transform: scale(1); } }
+html, body {
+  background: linear-gradient(to top, yellow, pink);
+  height: 99.7%; }
+
+header {
+  margin-top: 0.3%;
+  width: 80%;
+  background-color: #FFA07A;
+  border-radius: 10px;
+  margin-left: 10%; }
+  header h6, header h1 {
+    padding: 5px;
+    text-align: center;
+    font-size: 1rem;
+    color: #C71585; }
+
+main {
+  height: 75%; }
+
+.containerForMessage {
+  height: 100%;
+  width: 100%;
+  overflow: auto; }
+
+.fieldEnterNickName {
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 1%;
+  background-color: palevioletred;
+  border-radius: 10px;
+  padding: 10px; }
+  .fieldEnterNickName span {
+    margin-left: 10px;
+    color: white; }
+  .fieldEnterNickName input {
+    margin-top: 10px;
+    border-radius: 10px;
+    outline: 0;
+    padding: 5px; }
+  .fieldEnterNickName button {
+    background-color: deeppink;
+    color: white;
+    border-radius: 10px;
+    outline: 0; }
+
+.messageField {
+  display: none;
+  width: 100%; }
+  .messageField .sendMessage {
+    position: fixed;
+    left: 90%;
+    top: 88%;
+    width: 6%;
+    height: 60px;
+    border-radius: 10px;
+    outline: 0;
+    background-color: coral;
+    color: white; }
+  .messageField .inputMessage {
+    position: fixed;
+    width: 80%;
+    height: 50px;
+    background-color: white;
+    margin-left: 8%;
+    top: 88%;
+    padding: 5px;
+    overflow: hidden;
+    outline: 0;
+    border-radius: 20px; }
+
+.statusMessage {
+  width: 16%;
+  height: 22px;
+  position: fixed;
+  left: 8.5%;
+  top: 83.5%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2px;
+  display: none; }
+
+.animationMessageUser {
+  animation: departureUserMessage 0.7s; }
+
+.animationMessageBot {
+  animation: departureBotMessage 0.7s; }
+
+/*# sourceMappingURL=style.css.map */

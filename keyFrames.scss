@@ -1,0 +1,30 @@
+
+@keyframes departureUserMessage {
+  from {
+    position:absolute;
+    right: 100%;
+    opacity: 0;
+    transform: scale(0.1);
+  }
+  to {
+    position:absolute;
+    right: 10%;
+    opacity: 0.5;
+    transform: scale(1);
+  }
+}
+
+@keyframes departureBotMessage {
+  from {
+    position:absolute;
+    right: 100%;
+    opacity: 0;
+    transform: scale(0.1);
+  }
+  to {
+    position:absolute;
+    right: 40%;
+    opacity: 0.5;
+    transform: scale(1);
+  }
+}
